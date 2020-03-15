@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image, WebView} from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import { Icon } from 'native-base';
 
@@ -20,10 +20,9 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#CFCECE'
     },
-    content2: {
-        marginTop: 18,
-        borderBottomWidth: 1,
-        borderBottomColor: '#CFCECE'
+    footer: {
+        backgroundColor: '#F6F6F6',
+        height: 60
     }
 })
 
@@ -84,20 +83,22 @@ class HotelDetail extends Component {
                                 <Text>Check Out Time</Text><Text>12.00</Text>
                             </View>
                         </View>
-                        <View style={styles.content2}>
+                        <View style={{ marginBottom: 30, marginTop: 15 }}>
                             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#5A5A5A', marginBottom: 15 }}>Description</Text>
-                            <WebView 
-                                source={{
-                                    html:
-                                    "<style>p{text-align:justify}</style>"+
-                                    "<p>"+
-                                    "favehotel Bandara - Tangerang is the first favehotel in Tangerang with a new and different accommodation option for visitors to Jakarta, Indonesia . Located strategically in Soekarno Hatta International Airport area, this hotel offers time efficiency for smart travellers, also provides clean and comfortable accommodations with great value and heartfelt service.  A melting pot of Betawi, Chinese, and Banten culture,Tangerang offers variety of attractions for business and leisure travelers.Our 164 guest rooms are specially designed to comfort your stay while waiting for"+
-                                    "</p>"
-                                }}
-                            />
+                            <Text style={{ color: '#5A5A5A' }}>favehotel Bandara - Tangerang is the first favehotel in Tangerang with a new and different accommodation option for visitors to Jakarta, Indonesia . Located strategically in Soekarno Hatta International Airport area, this hotel offers time efficiency for smart travellers, also provides clean and comfortable accommodations with great value and heartfelt service.  A melting pot of Betawi, Chinese, and Banten culture,Tangerang offers variety of attractions for business and leisure travelers.Our 164 guest rooms are specially designed to comfort your stay while waiting for</Text>
                         </View>
                     </View>
                 </ScrollView>
+                <View style={styles.footer}>
+                    <View style={{ justifyContent: 'center', flex: 1 }}>
+                        <View style={{ marginHorizontal: 18, justifyContent: 'space-between', flexDirection: 'row' }}>
+                            <View style={{flex:1,justifyContent:'center'}}>
+                                <Text style={{ fontSize: 19, color: '#57DBE9',fontWeight:'bold' }}>RP. 579.000</Text>
+                            </View>
+                            <TouchableOpacity style={{ height: 46, width: 124, backgroundColor: '#57DBE9', justifyContent: 'center', alignItems: 'center', borderRadius: 8 }}><Text style={{ color: 'white', fontSize: 19, fontWeight: 'bold' }}>Book Now</Text></TouchableOpacity>
+                        </View>
+                    </View>
+                </View>
             </View>
         )
     }
