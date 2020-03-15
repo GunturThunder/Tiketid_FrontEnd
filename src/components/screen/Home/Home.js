@@ -98,7 +98,7 @@ class Home extends Component {
                         <View style={styles.comp2}></View>
                     </View>
                     <View style={{ height: 450}}>
-                        <ScrollView>
+                        <ScrollView showsVerticalScrollIndicator={false}>
                             <View style={styles.content}>
                                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                     <View style={{ flexDirection: 'row' }} >
