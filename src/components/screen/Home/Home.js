@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 17
     },
     header: {
-
+        marginTop:10
     },
     search: {
         backgroundColor: '#F5F5F5',
@@ -98,11 +98,11 @@ class Home extends Component {
                         <View style={styles.comp2}></View>
                     </View>
                     <View style={{ height: 450}}>
-                        <ScrollView showsHorizontalScrollIndicator={false}>
+                        <ScrollView>
                             <View style={styles.content}>
                                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                     <View style={{ flexDirection: 'row' }} >
-                                        <View>
+                                        <View> 
                                             <TouchableOpacity>
                                                 <Image style={{ height: 133, width: 230, borderRadius: 15, marginRight: 5 }} source={require('../../../img/favehotel/pic1.jpg')} />
                                             </TouchableOpacity>
@@ -133,7 +133,7 @@ class Home extends Component {
                             <Text style={{ color: '#75797C' }}>IDR 579.000</Text>
                             <Text style={{ fontSize: 18 }}>Favehotel Padjajaran Bogor</Text>
                             <Text style={{ color: '#75797C' }}>Jl.Riau No. 12D, RT.03/RW/03</Text>
-                            <TouchableOpacity style={styles.buttonHotel}><Text style={{ color: '#477FDD' }}>Detail Hotel</Text></TouchableOpacity>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('HotelDetail')} style={styles.buttonHotel}><Text style={{ color: '#477FDD' }}>Detail Hotel</Text></TouchableOpacity>
                             <View style={styles.content}>
                                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                     <View style={{ flexDirection: 'row' }} >

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     }
 })
 
-class OtpSession extends Component {
+class UpdatePassword extends Component {
     render() {
         return (
             <View style={styles.wrap}>
@@ -19,23 +19,19 @@ class OtpSession extends Component {
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('Login')}><Icon name="arrow-back" style={{ marginLeft: 20, marginTop: 20, color: 'white' }}></Icon></TouchableOpacity>
                     <View style={{ justifyContent: 'center', alignItems: 'center' }} >
                         <View style={{ marginTop: 171, flexDirection: 'row' }}>
-                            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#57DBE9', marginRight: 10 }}>OTP</Text>
-                            <Text style={{ color: 'white', fontSize: 21, fontWeight: 'bold' }}>Session</Text>
+                            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#57DBE9', marginRight: 10 }}>Create</Text>
+                            <Text style={{ color: 'white', fontSize: 21, fontWeight: 'bold' }}>Password</Text>
                         </View>
                     </View>
                 </View>
                 <Content style={{ paddingHorizontal: 40, marginTop: 60 }}>
                     <Form>
                         <Item >
-                            <Input placeholder="Verification Code" placeholderTextColor="#57DBE9" style={{ color: '#989898' }} keyboardType={'numeric'} />
+                            <Input secureTextEntry={true} placeholder="New Password" placeholderTextColor="#57DBE9" style={{ color: '#989898' }}/>
                         </Item>
                     </Form>
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate('UpdatePassword')} style={{ height: 44, backgroundColor: '#57DBE9', marginTop: 20, borderRadius: 24, justifyContent: 'center', alignItems: 'center' }}><Text style={{ color: 'white', fontSize: 20 }}>Check</Text></TouchableOpacity>
+                    <TouchableOpacity style={{ height: 44, backgroundColor: '#57DBE9', marginTop: 20, borderRadius: 24, justifyContent: 'center', alignItems: 'center' }}><Text style={{ color: 'white', fontSize: 20 }}>Create</Text></TouchableOpacity>
                     <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
-                        <Text style={{ fontSize: 16, color: '#989898' }}>Didn't Get Code Verification ? </Text>
-                        <TouchableOpacity >
-                            <Text style={{ fontSize: 16, color: '#989898' }}>Click here to resent</Text>
-                        </TouchableOpacity>
                     </View>
                 </Content>
             </View>
@@ -43,4 +39,4 @@ class OtpSession extends Component {
     }
 }
 
-export default OtpSession;
+export default UpdatePassword;

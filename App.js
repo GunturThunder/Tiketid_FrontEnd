@@ -9,7 +9,9 @@ import HomeScreen from './src/components/screen/Home/Home';
 import LoginScreen from './src/components/screen/Auth/Login';
 import RegisterScreen from './src/components/screen/Auth/Register';
 import ForgetPasswordScreen from './src/components/screen/Auth/ForgetPassword';
-import OtpSessionScreen from './src/components/screen/Auth/OtpSession'
+import OtpSessionScreen from './src/components/screen/Auth/OtpSession';
+import UpdatePasswordScreen from './src/components/screen/Auth/UpdatePassword';
+import HotelDetailScreen from './src/components/screen/Hotel/HotelDetail';
 
 const homeNavigator = createStackNavigator(
   {
@@ -43,6 +45,13 @@ const homeNavigator = createStackNavigator(
         header:null
       }
     },
+    UpdatePassword: {
+      screen: UpdatePasswordScreen,
+      navigationOptions:{
+        header:null
+      }
+    },
+    HotelDetail: HotelDetailScreen,
   }
 )
 

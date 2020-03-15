@@ -30,7 +30,7 @@ class Login extends Component {
                             <Input placeholder="Phone Number" placeholderTextColor="#57DBE9" style={{color:'#989898'}} keyboardType={'numeric'} />
                         </Item>
                         <Item>
-                            <Input placeholder="Password" placeholderTextColor="#57DBE9" style={{color:'#989898'}} />
+                            <Input secureTextEntry={true} placeholder="Password" placeholderTextColor="#57DBE9" style={{color:'#989898'}} />
                         </Item>
                     </Form>
                     <TouchableOpacity style={{height:44,backgroundColor:'#57DBE9',marginTop:20,borderRadius:24,justifyContent:'center',alignItems:'center'}}><Text style={{color:'white',fontSize:20}}>Sign in</Text></TouchableOpacity>
