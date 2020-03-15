@@ -208,9 +208,9 @@ class Home extends Component {
                         </ScrollView>
                     </View>
                     <View style={styles.footer}>
-                        <TouchableOpacity><Icon name="home" style={{ fontSize: 35, color: '#0194F3', marginHorizontal: 29 }} /></TouchableOpacity>
-                        <TouchableOpacity><Icon name="book" style={{ fontSize: 35, color: '#BDC0C6', marginHorizontal: 29 }} /></TouchableOpacity>
-                        <TouchableOpacity><Icon name="person" style={{ fontSize: 35, color: '#BDC0C6', marginHorizontal: 29 }} /></TouchableOpacity>
+                        <TouchableOpacity><Icon name="home" style={{ fontSize: 35, color: '#57DBE9', marginHorizontal: 29 }} /></TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookingList')}><Icon name="book" style={{ fontSize: 35, color: '#BDC0C6', marginHorizontal: 29 }} /></TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('User')}><Icon name="person" style={{ fontSize: 35, color: '#BDC0C6', marginHorizontal: 29 }} /></TouchableOpacity>
                     </View>
                 </View>
             </View>

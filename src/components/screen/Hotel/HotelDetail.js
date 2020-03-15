@@ -71,7 +71,7 @@ class HotelDetail extends Component {
                             <Text style={{ fontWeight: 'bold', fontSize: 17, marginBottom: 5, color: '#5A5A5A' }}>Favehotel Padjajaran Bogor</Text>
                             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                                 <Icon style={{ color: '#BDC0C6', fontSize: 20, marginRight: 10 }} name="locate"></Icon>
-                                <Text style={{ color: '#565656' }}>Jl.Riau No. 12D, RT.03/RW/03</Text>
+                                <Text style={{ color: '#565656'  }}>Jl.Riau No. 12D, RT.03/RW/03</Text>
                             </View>
                         </View>
                         <View style={styles.content1}>
